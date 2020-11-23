@@ -1,0 +1,1 @@
+SELECT * from training1.users where height  >= 160 order by weight asc;
