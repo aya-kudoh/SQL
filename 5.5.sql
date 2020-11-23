@@ -1,0 +1,1 @@
+SELECT id, name, age, weight / ((height / 100) * (height / 100)) from training1.users where weight / ((height / 100) * (height / 100)) BETWEEN 20 and 22;
