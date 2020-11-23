@@ -1,0 +1,1 @@
+SELECT name, email, tel from training1.users where email='jiro.tanaka@ccc.com';
