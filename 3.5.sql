@@ -1,3 +1,42 @@
+/* データベースの作成*/
+create database testdb;
+
+/*データベース一覧の取得*/
+show databases;
+
+/*データベースの削除*/
+drop database testdb;
+
+/*テーブルの作成*/
+create table tastdb.users(id int,nama vachar(10));
+
+/*テーブル一覧の取得*/
+show tables from testdb;
+
+/*テーブルの削除*/
+drop table testdb.users;
+
+/*データの追加*/
+insert into testdb.users values (1,'Yamada');
+/*値を指定してデータを追加*/
+insert into testdb.users (id,name) values (2,'佐藤');
+
+/*複数のレコードを追加する*/
+insert into testdb.users values (3, 'スズキ'),(4, 'John'), (5, 'メアリー');
+
+/*データの削除*/
+delete from testdb.users where id=2;
+
+/*
+--------------------------------------------------------------------------------------
+演習3.5 
+1) DB名が「training1」のDBを作成してください。
+
+2) 「training1」DBの中に、テーブル名が「users」のテーブルを作成してください。
+
+3) 以下のユーザーデータを「users」テーブルに追加してください。
+--------------------------------------------------------------------------------------
+*/
 CREATE database training1;
 show databases;
 CREATE table training1.users(
